@@ -1,0 +1,12 @@
+.c-t-bg {
+  background-color: $themecolor !important;
+}
+.c-t-txt {
+  color: $themecolor !important;
+}
+a.c-t-txt {
+  color: $themecolor !important;
+  &:hover {
+    color: $themecolor-dark !important;
+  }
+}
