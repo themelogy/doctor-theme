@@ -21,7 +21,10 @@
         <div class="container">
             <div class="row">
                 <!-- Column -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-2 col-md-6">
+                    <img class="img-thumbnail img-responsive" src="{{ asset('assets/media/doc-dr-eren-cetin.jpg') }}" alt="{{ setting('theme::company-name') }}" />
+                </div>
+                <div class="col-lg-4 col-md-6">
                     <a href="{{ url('/') }}"><img src="{{ Theme::url('images/logo/logo.svg') }}" height="35" alt="{{ setting('theme::company-name') }}" /></a>
                     <p class="m-t-20">
                         @location('dr-eren-cetin-klinigi', 'footer')
@@ -37,11 +40,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-12 m-t-5">
                     <h6 class="font-medium c-t-txt">{{ $menuService->title('footer-2') }}</h6>
                     {!! Menu::render('footer-2', \Themes\Moderna\Presenter\FooterMenuLinksPresenter::class) !!}
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-12 m-t-5">
-                    <h6 class="font-medium c-t-txt">{{ $menuService->title('footer-3') }}</h6>
-                    {!! Menu::render('footer-3', \Themes\Moderna\Presenter\FooterMenuLinksPresenter::class) !!}
                 </div>
 
             </div>
