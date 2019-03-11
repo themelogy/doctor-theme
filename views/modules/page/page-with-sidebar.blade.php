@@ -4,7 +4,7 @@
             @include('page::partials.image', ['page'=>$page])
         </div>
         <div class="col-md-3 {{ @$page->parent->settings->show_menu_location == 'left' ? 'order-md-3' : '' }} sidebar">
-            @parentMenu(@$page->parent)
+            @parentMenu($page, 'parent-menu')
 
             @pageTags($page, 5, 'tags')
         </div>
